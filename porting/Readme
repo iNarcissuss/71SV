@@ -1,0 +1,10 @@
+Build Method
+1. 修改setup_build.sh中CROSS_COMPILE的值,根据你将arm-poky-linux-gnueabi放置目录
+2. source setup_build.sh
+3. 编译uboot
+    cd uboot-imx_2014.04-r0
+    make mx6dlsabreauto_config
+    make u-boot.imx
+4. 编译kernel
+    cd linux-imx_3.14.28-r0
+    make zImage
