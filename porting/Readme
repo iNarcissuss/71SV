@@ -3,8 +3,9 @@ Build Method
 2. source setup_build.sh
 3. 编译uboot
     cd uboot-imx_2014.04-r0
-    make mx6dlsabreauto_config
-    make u-boot.imx
+    make distclean
+    make mx6dlsv71_config
+    make
 4. 编译kernel
     cd linux-imx_3.14.28-r0
     make zImage
